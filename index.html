@@ -37,6 +37,12 @@
     gtag('config', 'G-G1H2WJ7XH4');
   </script>
 
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
 </head>
 
 <body>
@@ -165,28 +171,15 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <!--
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Certificates</button>
-          </li>
-
-s
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projects</button>
-          </li>
-
-        -->
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projects</button>
+            <a href="#about" class="navbar-link">About</a>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <a href="#projects" class="navbar-link">Projects</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contacts" class="navbar-link">Contact</a>
           </li>
 
         </ul>
@@ -199,15 +192,11 @@ s
         </button>
       </div>
 
-
-
-
-
       <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article id = "about" class="about  active" data-page="about">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -221,17 +210,6 @@ s
               with experience teaching web development, particularly in React and Java.
             </p>
             <div id="more" style="display: none;">
-              <p>
-                On the backend, I excel in building robust and scalable RESTful APIs using Node.js and Express, and have a comprehensive understanding of the MERN stack. 
-                This experience has allowed me to develop a keen eye for optimizing performance and ensuring seamless integration across the stack.
-                For the frontend, I leverage JavaScript to design and implement dynamic and engaging interfaces that enhance user experience. 
-                My approach is driven by a passion for creating visually appealing and highly functional web applications.
-              </p>
-
-              <p>
-                I thrive in collaborative environments and enjoy working with teams that embrace agile methodologies. I am motivated by challenges and continuously seek opportunities to learn and grow. 
-                Being part of the tech community is important to me, and I actively engage with it to stay current with industry trends and best practices.
-              </p>
               <p>
                 I am currently exploring new opportunities where I can apply my skills and contribute to innovative projects. If you’re looking for someone who is dedicated, enthusiastic, and eager to make a positive impact, 
                 I would love to connect and discuss how I can contribute to your team.
@@ -323,48 +301,6 @@ s
           </ul>
           <br>
 
-          <section class="service">
-
-            <h3 class="h3 service-title">Personal Skills</h3>
-
-            <ul class="service-list">
-
-              <li class="service-item">
-
-                <div class="service-icon-box">
-                  <img src="./assets/images/icon-video.svg" alt="video icon" width="40">
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Teamwork</h4>
-
-                  <p class="service-item-text">
-                    I excel in collaborative environments, where my ability to listen and communicate effectively helps drive collective success.
-                  </p>
-                </div>
-
-              </li>
-
-              <li class="service-item">
-
-                <div class="service-icon-box">
-                  <img src="./assets/images/icon-multimedia.svg" alt="multimedia icon" width="40">
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Adaptability</h4>
-
-                  <p class="service-item-text">
-                    I am proactive and resilient, tackling complex problems with a positive mindset and a determination to find innovative solutions.
-                  </p>
-                </div>
-
-              </li>
-
-            </ul>
-
-          </section>
-
           <!-- Languages -->
 
           <!-- Programming Languages -->
@@ -396,7 +332,7 @@ s
 
                 <div class="title-wrapper">
                   <h5 class="h5">JavaScript</h5>
-                  <data value="75">60%</data>
+                  <data value="75">50%</data>
                 </div>
 
                 <div class="languages-progress-bg">
@@ -422,7 +358,7 @@ s
 
                 <div class="title-wrapper">
                   <h5 class="h5">React</h5>
-                  <data value="50">50%</data>
+                  <data value="50">60%</data>
                 </div>
 
                 <div class="languages-progress-bg">
@@ -435,7 +371,7 @@ s
 
                 <div class="title-wrapper">
                   <h5 class="h5">Express</h5>
-                  <data value="25">40%</data>
+                  <data value="25">50%</data>
                 </div>
 
                 <div class="languages-progress-bg">
@@ -526,10 +462,6 @@ s
               </li>
 
               <li class="technologies-item">
-                <img src="./assets/images/npm.png" alt="Npm" id="8">
-              </li>
-
-              <li class="technologies-item">
                 <img src="./assets/images/java.png" alt="Java" id="9">
               </li>
 
@@ -542,7 +474,7 @@ s
               </li>
 
               <li class="technologies-item">
-                <img src="./assets/images/linux.png" alt="Linux" id="12">
+                <img src="./assets/images/R.png" alt="R" id="12">
               </li>
 
               <li class="technologies-item">
@@ -554,10 +486,6 @@ s
               </li>
 
               <li class="technologies-item">
-                <img src="./assets/images/adobe.png" alt="Adobe" id="15">
-              </li>
-
-              <li class="technologies-item">
                 <img src="./assets/images/figma.png" alt="Figma" id="16">
               </li>
 
@@ -565,752 +493,16 @@ s
 
           </section>
 
-
-          <!--
-          - Hobbies
-        -->
           <br>
 
-          <!-- <section class="hobbies">
-
-            <h3 class="h3 hobbies-title">Favorite Activities</h3>
-
-            <ul class="hobbies-list has-scrollbar">
-
-              <li class="hobbies-item" id="1">
-                <div class="content-card" data-hobbies-item>
-
-                  <figure class="hobbies-avatar-box">
-                    <img src="./assets/images/finances.png" alt="finances" width="60" data-hobbies-avatar>
-                  </figure>
-
-                  <h4 class="h4 hobbies-item-title" data-hobbies-title>Investments</h4>
-
-                  <div class="hobbies-text" data-hobbies-text>
-                    <p>
-                      Exploring Stocks, Crypto and Long-Term Growth Opportunities for Financial Investment
-                    </p>
-                  </div>
-
-                </div>
-              </li>
-
-              <li class="hobbies-item" id="2">
-                <div class="content-card" data-hobbies-item>
-
-                  <figure class="hobbies-avatar-box">
-                    <img src="./assets/images/music.png" alt="music" width="60" data-hobbies-avatar>
-                  </figure>
-
-                  <h4 class="h4 hobbies-item-title" data-hobbies-title>Music</h4>
-
-                  <div class="hobbies-text" data-hobbies-text>
-                    <p>
-                      Creating Instrumentals, Mixing and Mastering Tracks and Collaborating with Musicians
-                    </p>
-                  </div>
-
-                </div>
-              </li>
-
-              <li class="hobbies-item" id="3">
-                <div class="content-card" data-hobbies-item>
-
-                  <figure class="hobbies-avatar-box">
-                    <img src="./assets/images/books.png" alt="traveling" width="60" data-hobbies-avatar>
-                  </figure>
-
-                  <h4 class="h4 hobbies-item-title" data-hobbies-title>Reading</h4>
-
-                  <div class="hobbies-text" data-hobbies-text>
-                    <p>
-                      Books on Self-Improvement, Psychology and Understanding Life Better.
-                    </p>
-                  </div>
-
-                </div>
-              </li>
-
-              <li class="hobbies-item" id="4">
-                <div class="content-card" data-hobbies-item>
-
-                  <figure class="hobbies-avatar-box">
-                    <img src="./assets/images/camera.png" alt="photography" width="60" data-hobbies-avatar>
-                  </figure>
-
-                  <h4 class="h4 hobbies-item-title" data-hobbies-title>Photography</h4>
-
-                  <div class="hobbies-text" data-hobbies-text>
-                    <p>
-                      Capturing precious moments and memories through the lens of a camera.
-                    </p>
-                  </div>
-
-                </div>
-              </li>
-
-            </ul>
-
-          </section> -->
-
-          <!-- Next Page -->
-          <div class="pagination-box">
-            <button class="pagination-button" data-nav-link data-target-section="projects">Next ></button>
-          </div>
-
-      </article>
-
-
-
-
-
-      <!-- Certificates -->
-
-      <article class="certificates" data-page="certificates">
-
-        <header>
-          <h2 class="h2 article-title">My Certificates</h2>
-        </header>
-
-
-        <br><br>
-
-        <!-- Group 1 -->
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="desktop-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Technical Competence</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Computer Science Degree: Software Development</h4>
-              <p class="timeline-text">
-               IHK Berlin
-              </p>
-
-              <div class="certificate-container">
-                <img src="./assets/images/certificates/ausbildung.png" onclick="window.open(this.src)">
-              </div>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">React Native Essentials</h4>
-              <p class="timeline-text">
-                LinkedIn Learning
-              </p>
-
-              <div class="certificate-container">
-                <img src="./assets/images/certificates/react-native.png" onclick="window.open(this.src)">
-              </div>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Node.js Essentials</h4>
-              <p class="timeline-text">
-                LinkedIn Learning
-              </p>
-
-              <div class="certificate-container">
-                <img src="./assets/images/certificates/node.js-essentials.png" onclick="window.open(this.src)">
-              </div>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">React.js Essentials</h4>
-              <p class="timeline-text">
-                LinkedIn Learning
-              </p>
-
-              <div class="certificate-container">
-                <img src="./assets/images/certificates/react.js-essentials.png" onclick="window.open(this.src)">
-              </div>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">JavaScript Essentials</h4>
-              <p class="timeline-text">
-                LinkedIn Learning
-              </p>
-
-              <div class="certificate-container">
-                <img src="./assets/images/certificates/javascript-essentials.png" onclick="window.open(this.src)">
-              </div>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Fundamentals of Digital Marketing</h4>
-              <p class="timeline-text">
-                Google Certified Digital Marketing Course
-              </p>
-
-              <div class="certificate-container">
-                <img src="./assets/images/certificates/fundamentals-of-digital-marketing.png"
-                  onclick="window.open(this.src)">
-              </div>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Elements of AI</h4>
-              <p class="timeline-text">
-                University of Helsinki
-              </p>
-              <div class="certificate-container">
-                <img src="./assets/images/certificates/elements-of-ai.png" onclick="window.open(this.src)">
-              </div>
-
-            </li>
-
-          </ol>
-
-          <br><br>
-
-          <!-- Group 2 -->
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="people-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Professional Skills</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Efficient Email Management</h4>
-              <p class="timeline-text">
-                WEKA Media GmbH & Co. KG
-              </p>
-              <div class="certificate-container">
-                <img src="./assets/images/certificates/efficient-email-management.png" onclick="window.open(this.src)">
-              </div>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">
-                Time and Self Management</h4>
-              <p class="timeline-text">
-                VIWIS GmbH
-              </p>
-              <div class="certificate-container">
-                <img src="./assets/images/certificates/time-and-self-management.png" onclick="window.open(this.src)">
-              </div>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">
-                Excel 2013 Professional</h4>
-              <p class="timeline-text">
-                Microsoft
-              </p>
-              <div class="certificate-container">
-                <img src="./assets/images/certificates/excel-2013-professional.png" onclick="window.open(this.src)">
-              </div>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">
-                Word 2013 Professional</h4>
-              <p class="timeline-text">
-                Microsoft
-              </p>
-              <div class="certificate-container">
-                <img src="./assets/images/certificates/word-2013-professional.png" onclick="window.open(this.src)">
-              </div>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">
-                Intercultural Competence</h4>
-              <p class="timeline-text">
-                IMAP GmbH
-              </p>
-              <div class="certificate-container">
-                <img src="./assets/images/certificates/intercultural-competence.png" onclick="window.open(this.src)">
-              </div>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">
-                Communication and Complaint Management</h4>
-              <p class="timeline-text">
-                Hiba impulse GmbH
-              </p>
-              <div class="certificate-container">
-                <img src="./assets/images/certificates/communication-complaint-management.png"
-                  onclick="window.open(this.src)">
-              </div>
-
-            </li>
-          </ol>
-
-          <br><br>
-          <!-- Group 3 -->
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="language-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Language Proficiency</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">
-                German Language C1</h4>
-              <p class="timeline-text">
-                TELC European Language Certificates
-              </p>
-              <div class="certificate-container">
-                <img src="./assets/images/certificates/german-c1.png" onclick="window.open(this.src)">
-              </div>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">
-                English Language B2</h4>
-              <p class="timeline-text">
-                LinguaTV GmbH
-              </p>
-              <div class="certificate-container">
-                <img src="./assets/images/certificates/english-b2.png" onclick="window.open(this.src)">
-              </div>
-
-            </li>
-
-          </ol>
-
-          <!-- Next Page -->
-          <div class="pagination-box">
-            <button class="pagination-button" data-nav-link data-target-section="projects">Next ></button>
-          </div>
-
+          <!-- Next Page -->  
         </section>
 
-
-
-
-      </article>
-
-
-
-
-
       <!--
-        - #Projects Portfolio
-
-      <article class="projects" data-page="projects">
-
-        <header>
-          <h2 class="h2 article-title">My Projects</h2>
-        </header>
-
-        <section class="projects notranslate">
-
-          <ul class="project-list">
-
-            <li class="project-item active" data-filter-item data-category="websites designs">
-              <a href="https://www.tinnitushelp.me/">
-                <figure class="project-img loading">
-                  <img src="./assets/images/projects/tinnitus-blog.png" loading="lazy">
-                </figure>
-              </a>
-              <h3 class="project-title">TinnitusHelp.me</h3>
-              <p class="project-category">Full-Stack</p>
-              <p class="project-category">Solo Development</p>
-              <p class="project-development">Next.js | TypeScript | Material-UI</p>
-              <div class="project-buttons">
-                <a href="https://www.tinnitushelp.me/">
-                  <ion-icon name="eye-outline"></ion-icon> Preview
-                </a>
-                <a href="https://github.com/oktayshakirov/tinnitus-blog">
-                  <ion-icon name="logo-github"></ion-icon> GitHub
-                </a>
-              </div>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="websites designs applications">
-              <a href="https://myfitphoto.com/">
-                <figure class="project-img loading">
-                  <img src="./assets/images/projects/myfitphoto.png" loading="lazy">
-                </figure>
-              </a>
-              <h3 class="project-title">MyFitPhoto AI</h3>
-              <p class="project-category">Design + Frontend + AI Prompts</p>
-              <p class="project-category">Team Project</p>
-              <p class="project-development">React.js | Chakra UI</p>
-              <div class="project-buttons">
-                <a href="https://myfitphoto.com/" >
-                  <ion-icon name="eye-outline"></ion-icon> Preview
-                </a>
-              </div>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="applications websites">
-              <a href="https://clonings.ai/">
-                <figure class="project-img loading">
-                  <img src="./assets/images/projects/clonings.png" loading="lazy">
-                </figure>
-              </a>
-              <h3 class="project-title">Clonings AI</h3>
-              <p class="project-category">Frontend</p>
-              <p class="project-category">Team Project</p>
-              <p class="project-development">React.js | Chakra UI</p>
-              <div class="project-buttons">
-                <a href="https://clonings.ai/">
-                  <ion-icon name="eye-outline"></ion-icon> Preview
-                </a>
-              </div>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="websites">
-              <a href="https://cortextual.ai">
-                <figure class="project-img loading">
-                  <img src="./assets/images/projects/cortextual.png" loading="lazy">
-                </figure>
-              </a>
-              <h3 class="project-title">Cortextual AI Website</h3>
-              <p class="project-category">Frontend</p>
-              <p class="project-category">Solo Development</p>
-              <p class="project-development">Wordpress</p>
-              <div class="project-buttons">
-                <a href="https://cortextual.ai">
-                  <ion-icon name="eye-outline"></ion-icon> Preview
-                </a>
-              </div>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="applications designs">
-              <a href="https://www.fashionswap.ai/">
-                <figure class="project-img loading">
-                  <img src="./assets/images/projects/fashionswap.png" loading="lazy">
-                </figure>
-              </a>
-              <h3 class="project-title">FashionSwap App</h3>
-              <p class="project-category">Design + Frontend</p>
-              <p class="project-category">Team Project</p>
-              <p class="project-development">Figma | React.js | Chakra UI</p>
-              <div class="project-buttons">
-                <a href="https://www.fashionswap.ai/">
-                  <ion-icon name="eye-outline"></ion-icon> Preview
-                </a>
-                <a
-                  href="https://www.figma.com/file/E0LCV0R8Z1quFISQnEXsJH/FashionSwap?type=design&node-id=34%3A88&mode=design&t=5Zdkopqchsl0NiUf-1">
-                  <ion-icon name="logo-figma"></ion-icon> Figma
-                </a>
-              </div>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="applications designs">
-              <a href="https://contour.bg">
-                <figure class="project-img loading">
-                  <img src="./assets/images/projects/contour.png" loading="lazy">
-                </figure>
-              </a>
-              <h3 class="project-title">Inventory Management App</h3>
-              <p class="project-category">Design + Frontend</p>
-              <p class="project-category">Team Project</p>
-              <p class="project-development">Figma | React.js | Chakra UI</p>
-              <div class="project-buttons">
-                <a href="https://contour.bg">
-                  <ion-icon name="eye-outline"></ion-icon> Preview
-                </a>
-                <a
-                  href="https://www.figma.com/file/8mCYvhRkKW89CIWHRAy9RU/Contour.bg-(Demo)?type=design&t=PKX6RVacjJ6Nuqei-6">
-                  <ion-icon name="logo-figma"></ion-icon> Figma
-                </a>
-              </div>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="websites designs applications">
-              <a href="https://mybestwishes.ai/">
-                <figure class="project-img loading">
-                  <img src="./assets/images/projects/mybestwishes.png" loading="lazy">
-                </figure>
-              </a>
-              <h3 class="project-title">MyBestWishes AI</h3>
-              <p class="project-category">Design + Frontend + AI Prompts</p>
-              <p class="project-category">Team Project</p>
-              <p class="project-development">Figma | React.js | Chakra UI</p>
-              <div class="project-buttons">
-                <a href="https://mybestwishes.ai/" >
-                  <ion-icon name="eye-outline"></ion-icon> Preview
-                </a>
-                <a
-                  href="https://www.figma.com/file/Q8TREoM195xySYKnNjjMun/MyBestWishes-2.0?type=design&mode=design&t=zuAWuwuUFFqp1leb-0">
-                  <ion-icon name="logo-figma"></ion-icon> Figma
-                </a>
-              </div>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="websites designs applications">
-              <a href="https://myworkphoto.com/">
-                <figure class="project-img loading">
-                  <img src="./assets/images/projects/myworkphoto.png" loading="lazy">
-                </figure>
-              </a>
-              <h3 class="project-title">MyWorkPhoto AI</h3>
-              <p class="project-category">Design + Frontend + AI Prompts</p>
-              <p class="project-category">Team Project</p>
-              <p class="project-development">Figma | React.js | Chakra UI</p>
-              <div class="project-buttons">
-                <a href="https://myworkphoto.com/" >
-                  <ion-icon name="eye-outline"></ion-icon> Preview
-                </a>
-                <a
-                  href="https://www.figma.com/file/eUARUbGIBm2KuNNnvdXDkA/MyWorkPhoto?type=design&mode=design&t=zuAWuwuUFFqp1leb-1">
-                  <ion-icon name="logo-figma"></ion-icon> Figma
-                </a>
-              </div>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="applications designs">
-              <a href="https://ogno.netlify.app/">
-                <figure class="project-img loading">
-                  <img src="./assets/images/projects/ogno-dashboard.png" loading="lazy">
-                </figure>
-              </a>
-              <h3 class="project-title">Ogno Marketing Dashboard</h3>
-              <p class="project-category">Full-Stack</p>
-              <p class="project-category">Solo Development</p>
-              <p class="project-development">React.js | Strapi.js | MySQL</p>
-              <div class="project-buttons">
-                <a href="https://ogno.netlify.app/">
-                  <ion-icon name="eye-outline"></ion-icon> Preview
-                </a>
-                <a href="https://github.com/oktayshakirov/marketing-dashboard">
-                  <ion-icon name="logo-github"></ion-icon> GitHub
-                </a>
-              </div>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="websites">
-              <a href="https://askmed.bayer.com/">
-                <figure class="project-img loading">
-                  <img src="./assets/images/projects/bayer-askmed.png" loading="lazy">
-                </figure>
-              </a>
-              <h3 class="project-title">Bayer USA Health App</h3>
-              <p class="project-category">Frontend</p>
-              <p class="project-category">Team Project</p>
-              <p class="project-development">Drupal | PHP | CSS</p>
-              <div class="project-buttons">
-                <a href="https://askmed.bayer.com/">
-                  <ion-icon name="eye-outline"></ion-icon> Preview
-                </a>
-              </div>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="websites">
-              <a href="https://enemzet.store/">
-                <figure class="project-img loading">
-                  <img src="./assets/images/projects/enemzet.png" loading="lazy">
-                </figure>
-              </a>
-              <h3 class="project-title">EnEmZet Online Store</h3>
-              <p class="project-category">Full-Stack</p>
-              <p class="project-category">Solo Development</p>
-              <p class="project-development">Next.js | TypeScript | MySQL</p>
-              <div class="project-buttons">
-                <a href="https://enemzet.store/">
-                  <ion-icon name="eye-outline"></ion-icon> Preview
-                </a>
-                <a href="https://github.com/En-Em-Zet">
-                  <ion-icon name="logo-github"></ion-icon> GitHub
-                </a>
-              </div>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="websites designs">
-              <a href="https://timeazon.netlify.app/">
-                <figure class="project-img loading">
-                  <img src="./assets/images/projects/watch_store.png" loading="lazy">
-                </figure>
-              </a>
-              <h3 class="project-title">Timeazon Online Store</h3>
-              <p class="project-category">Full-Stack</p>
-              <p class="project-category">Solo Development</p>
-              <p class="project-development">React.js | Node.js | MySQL | Sass</p>
-              <div class="project-buttons">
-                <a href="https://timeazon.netlify.app/">
-                  <ion-icon name="eye-outline"></ion-icon> Preview
-                </a>
-                <a href="https://github.com/oktayshakirov/timeazon-fullstack">
-                  <ion-icon name="logo-github"></ion-icon> GitHub
-                </a>
-              </div>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="applications">
-              <a href="https://oktayshakirov.github.io/weather-app/">
-                <figure class="project-img loading">
-                  <img src="./assets/images/projects/weather-app.png" loading="lazy">
-                </figure>
-              </a>
-              <h3 class="project-title">Weather App</h3>
-              <p class="project-category">Frontend</p>
-              <p class="project-category">Solo Development</p>
-              <p class="project-development">JavaScript | API's | CSS</p>
-              <div class="project-buttons">
-                <a href="https://oktayshakirov.github.io/weather-app/">
-                  <ion-icon name="eye-outline"></ion-icon> Preview
-                </a>
-                <a href="https://github.com/oktayshakirov/weather-app">
-                  <ion-icon name="logo-github"></ion-icon> GitHub
-                </a>
-              </div>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="games">
-              <a href="https://oktayshakirov.github.io/pigletz-matching/">
-                <figure class="project-img loading">
-                  <img src="./assets/images/projects/pigletz-matching.png" loading="lazy">
-                </figure>
-              </a>
-              <h3 class="project-title">Pigletz Memory Game</h3>
-              <p class="project-category">Frontend</p>
-              <p class="project-category">Solo Development</p>
-              <p class="project-development">JavaScript | CSS </p>
-              <div class="project-buttons">
-                <a href="https://oktayshakirov.github.io/pigletz-matching/">
-                  <ion-icon name="eye-outline"></ion-icon> Preview
-                </a>
-                <a href="https://github.com/oktayshakirov/pigletz-matching">
-                  <ion-icon name="logo-github"></ion-icon> GitHub
-                </a>
-              </div>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="applications">
-              <a href="https://oktayshakirov.000webhostapp.com/team-manager/">
-                <figure class="project-img loading">
-                  <img src="./assets/images/projects/team-manager.png" loading="lazy">
-                </figure>
-              </a>
-              <h3 class="project-title">Team Management Tool</h3>
-              <p class="project-category">Full-Stack</p>
-              <p class="project-category">Solo Development</p>
-              <p class="project-development">PHP | CSV Data | CSS </p>
-              <div class="project-buttons">
-                <a href="https://oktayshakirov.000webhostapp.com/team-manager/">
-                  <ion-icon name="eye-outline"></ion-icon> Preview
-                </a>
-                <a href="https://github.com/oktayshakirov/team-manager">
-                  <ion-icon name="logo-github"></ion-icon> GitHub
-                </a>
-              </div>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="websites designs">
-              <a href="https://oktayshakirov.com">
-                <figure class="project-img loading">
-                  <img src="./assets/images/projects/portfolio.png" loading="lazy">
-                </figure>
-              </a>
-              <h3 class="project-title">Personal Portfolio</h3>
-              <p class="project-category">Frontend</p>
-              <p class="project-category">Solo Development</p>
-              <p class="project-development">JavaScript | CSS | HTML </p>
-              <div class="project-buttons">
-                <a href="https://oktayshakirov.com">
-                  <ion-icon name="eye-outline"></ion-icon> Preview
-                </a>
-                <a href="https://github.com/oktayshakirov/portfolio">
-                  <ion-icon name="logo-github"></ion-icon> GitHub
-                </a>
-              </div>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="games">
-              <a href="https://oktayshakirov.000webhostapp.com/quiz">
-                <figure class="project-img loading">
-                  <img src="./assets/images/projects/quiz.png" loading="lazy">
-                </figure>
-              </a>
-              <h3 class="project-title">Quiz Time</h3>
-              <p class="project-category">Frontend</p>
-              <p class="project-category">Solo Development</p>
-              <p class="project-development">PHP | CSS | HTML </p>
-              <div class="project-buttons">
-                <a href="https://oktayshakirov.000webhostapp.com/quiz">
-                  <ion-icon name="eye-outline"></ion-icon> Preview
-                </a>
-                <a href="https://github.com/oktayshakirov/quiz">
-                  <ion-icon name="logo-github"></ion-icon> GitHub
-                </a>
-              </div>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="applications">
-              <a href="https://berlinew.wordpress.com/categories">
-                <figure class="project-img loading">
-                  <img src="./assets/images/projects/berlinew.jpg" loading="lazy">
-                </figure>
-              </a>
-              <h3 class="project-title">BerliNEW Android App</h3>
-              <p class="project-category">Full-Stack</p>
-              <p class="project-category">Solo Development</p>
-              <p class="project-development">Wordpress | Android SDK</p>
-              <div class="project-buttons">
-                <a href="https://berlinew.wordpress.com/categories">
-                  <ion-icon name="eye-outline"></ion-icon> Preview
-                </a>
-              </div>
-            </li>
-          </ul>
-
-          -->
-
-          <!-- Next Page -->
-          
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
+        - #PROJECTS
       -->
 
-      <article class="more" data-page="projects">
+      <section id="projects" data-page="projects">
 
         <header>
           <h2 class="h2 article-title">My Projects</h2>
@@ -1318,26 +510,22 @@ s
 
         <section class="blog-posts">
 
-          <ul class="filter-list">
+          <ul id="projects" class="filter-list">
 
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Websites</button>
+              <button data-filter-btn>Full-Stack</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn>Frontend</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Games</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Designs</button>
+              <button data-filter-btn>Backend</button>
             </li>
 
           </ul>
@@ -1361,19 +549,15 @@ s
               </li>
 
               <li class="select-item">
-                <button data-select-item>Websites</button>
+                <button data-select-item>Full-Stack</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item>Frontend</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Games</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Designs</button>
+                <button data-select-item>Backend</button>
               </li>
 
             </ul>
@@ -1383,20 +567,23 @@ s
           <ul class="blog-posts-list">
 
 
-            <li class="project-item active" data-filter-item data-category="websites">
+            <li class="project-item active" data-filter-item data-category="full-stack">
               <figure class=" blog-banner-box">
                 <img src="./assets/images/projects/guacari.jpg" alt="Guacari" loading="lazy">
               </figure>
-              <div class="blog-content" data-filter-item data-category="websites">
+              <div class="blog-content" data-filter-item data-category="full-stack">
                 <div class="blog-meta">
                   <p class="blog-category">Management & Inventory</p>
                   <span class="dot"></span>
                   <p class="blog-category">Website</p>
                 </div>
                 <h3 class="h3 blog-item-title">Guacarí Hotel</h3>
-                <p class="blog-text">
+                <p class="blog-text" style="margin-bottom: 1em;">
                   I created a web application for managing hotel clients, room reservations, and the restaurant's inventory. 
                   This platform streamlines the process, making it easier for staff to manage guest details and keep track of restaurant supplies efficiently.
+                </p>
+                <p class="blog-text">
+                  This project was sold and is currently used for the management of a hotel in Colombia.
                 </p>
               </div>
 
@@ -1443,7 +630,7 @@ s
               </div>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="websites designs">
+            <li class="project-item active" data-filter-item data-category="frontend">
               <figure class="blog-banner-box">
                 <img src="./assets/images/projects/singapur.jpg" alt="Singapur Airlines" loading="lazy">
               </figure>
@@ -1454,10 +641,14 @@ s
                   <p class="blog-category">Website</p>
                 </div>
                 <h3 class="h3 blog-item-title">Singapur Airlines</h3>
-                <p class="blog-text">
-                  I created a website for a fictional airline inspired by Avianca. The site allows users to book flights, check flight status, and explore travel options. 
-                  It features a clean design, easy navigation, and essential airline services, offering a seamless experience for travelers.
+                <p class="blog-text" style="margin-bottom: 1em;">
+                  I created a website for a fictional airline inspired by Avianca. The site allows users to check flight status, and explore travel options. 
+                  It features a clean design and easy navigation, offering a seamless experience.
                 </p>
+                <p class="blog-text">
+                  This project was created for academic purposes to practice frontend development using mock APIs.
+                </p>
+
               </div>
 
               <div class="project-technologies">
@@ -1483,76 +674,14 @@ s
               
               </div>
             </li>
-
-            <!--
-
-            <li class="project-item active" data-filter-item data-category="applications">
-              <figure class=" blog-banner-box">
-                <img src="./assets/images/projects/prompt-engineering.jpg" alt="Prompt Engineering" loading="lazy">
-              </figure>
-              <div class="blog-content">
-                <div class="blog-meta">
-                  <p class="blog-category">Stable Diffusion</p>
-                  <span class="dot"></span>
-                  <p class="blog-category">Midjourney</p>
-                </div>
-                <h3 class="h3 blog-item-title">Prompt Engineering</h3>
-                <p class="blog-text">
-                  I use AI tools to create images from prompts. 
-                  Focusing on clear instructions, I achieve precise visuals, eliminate unwanted details 
-                  and ensure consistent results. This skill is ideal for development of apps that demand unique and consistent outcomes.
-                </p>
-              </div>
-              <div class="project-buttons">
-                <a href="https://www.instagram.com/p/C6WNc-2tgKf">
-                  <ion-icon name="image-outline"></ion-icon> Example
-                </a>
-              </div>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="games">
-              <figure class="blog-banner-box">
-                <img src="./assets/images/projects/sha-pixels.png" alt="Sha Pixels" loading="lazy">
-              </figure>
-              <div class="blog-content">
-                <div class="blog-meta">
-                  <p class="blog-category">Multimedia Design</p>
-                  <span class="dot"></span>
-                  <p class="blog-category">3D Rendering</p>
-                </div>
-                <h3 class="h3 blog-item-title">Digital Content Creation</h3>
-                <p class="blog-text">
-                  My digital art portfolio, which includes a wide collection of graphic designs, 3D models
-                  and short video animations created for various purposes. I have long experience working with popular
-                  softwares
-                  like Adobe Photoshop, After Effects, Premiere Pro and Blender.
-                </p>
-              </div>
-              <div class="project-buttons">
-                <a href="https://www.instagram.com/sha.pixels">
-                  <ion-icon name="camera-outline"></ion-icon> Instagram
-                </a>
-              </div>
-            </li>
-          </ul>
-
-          -->
-
-          <!-- Next Page -->
-          <div class="pagination-box">
-            <button class="pagination-button" data-nav-link data-target-section="contact">Next ></button>
-          </div>
         </section>
 
-      </article>
-
-
-
+      </section>
 
 
       <!-- CONTACT-->
 
-      <article class="contact" data-page="contact">
+      <section id="contacts" class="contact" data-page="contact">
 
         <header>
           <h2 class="h2 article-title">Contact</h2>
@@ -1569,24 +698,6 @@ s
           </div>
         </div>
         <br>
-
-        
-
-        <!-- Calendly popup widget
-        <div class="content-card">
-          <h3 class="h3 form-title" align="center">Schedule Video Call with me:</h3>
-          <br>
-          <center>
-            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-            <a href=""
-              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/oktayshakirov/30min?hide_landing_page_details=1&hide_gdpr_banner=1'});return false;">
-              <img src="./assets/images/calendar.png"></img></a>
-          </center>
-        </div>
-        <br>
-
-        -->
 
         <!-- Social Links -->
         <div class="content-card">
@@ -1622,50 +733,15 @@ s
         </div>
         <br>
 
-        <!-- Donations
-
         
 
-        <div class="content-card">
-          <h3 class="h3 form-title" align="center">Support my work:</h3>
-          <br>
-          <center>
-            <p class="about-text">With every small donation, you contribute
-              to hostings, domains and other essential costs. All my work which is made public on GitHub or Figma is open source and free for everyone to use. </p>
-          </center>
-          <center>
-            <a href="https://www.buymeacoffee.com/oktayshakirov" target="_blank" rel="noopener">
-              <img src="./assets/images/coffee-sponsort.png" alt="Buy me a coffee" class="support">
-            </a>
-          </center>
-          <br>
-          <center>
-            <a href="https://github.com/sponsors/oktayshakirov" target="_blank" rel="noopener">
-              <img src="./assets/images/github-sponsors.png" alt="Sponsor on GitHub" class="support">
-            </a>
-          </center>
-          <br>
-          <center>
-            <a href="https://www.paypal.com/paypalme/OShakirov" target="_blank" rel="noopener">
-              <img src="./assets/images/paypalme.png" alt="PayPal Me" class="support">
-            </a>
-          </center>
 
-        </div>
-
-        -->
-
-
+      </section>
       </article>
 
     </div>
 
   </main>
-
-
-
-
-
 
   <!--
     - custom js link
