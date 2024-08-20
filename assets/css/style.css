@@ -153,11 +153,12 @@ html {
 }
 
 body {
-  background: var(--sha-background);
+  background: #020602;
+  ;
 }
 
 body.dark-mode {
-  background: var(--sha-background-dark);
+  background: #020602;
 }
 
 /*-----------------------------------*\
