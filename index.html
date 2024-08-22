@@ -11,6 +11,8 @@
   <meta property="og:description" content="Hi, i'm Kevin. This portfolio showcases my projects and provides information about my skills and experience" />
   <meta property="og:image" content="./assets/images/logo.ico" />
   <meta property="og:url" content="https://portfolio-kevestr.vercel.app/" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
   <!--
     - favicon
   -->
@@ -66,7 +68,7 @@
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Kevin Estrada">Kevin Estrada</h1>
+          <h1 class="name" title="Kevin Estrada">Kevin Estrada Del Valle</h1>
 
           <p class="title notranslate" id="motto"></p>
         </div>
@@ -213,12 +215,12 @@
           <div id="expandable-section">
             <p>
               Hello there! &#128075 My name is Kevin! I'm a Systems Engineering student passionate about web development. I specialize in both frontend and backend technologies, 
-              with experience teaching web development, particularly in React and Java.
+              with experience <strong>teaching web development, particularly in React and Java.</strong>
             </p>
             <div id="more" style="display: none;">
               <p>
                 I am currently exploring new opportunities where I can apply my skills and contribute to innovative projects. If you’re looking for someone who is dedicated, enthusiastic, and eager to make a positive impact, 
-                I would love to connect and discuss how I can contribute to your team.
+                <strong>I would love to connect and discuss how I can contribute to your team.</strong>
               </p>
             </div>
           </div>
@@ -232,86 +234,76 @@
           - service
         -->
 
-        <section class="service">
-
-          <h3 class="h3 service-title">Primary Focus</h3>
-
-          <ul class="service-list">
-
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web Design & Development</h4>
-
-                <p class="service-item-text">
-                  Designing clean, effective websites that boost your online personal success.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-frameworks.svg
-                " alt="frameworks icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Full-Stack Solutions</h4>
-
-                <p class="service-item-text">
-                  Building powerful web apps with modern frameworks, databases, and coding in Java and Python.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile Apps & Games</h4>
-
-                <p class="service-item-text">
-                  Designing and building captivating apps and games for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-marketing.svg" alt="marketing icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Science</h4>
-
-                <p class="service-item-text">
-                  Transforming data into actionable insights and intelligent solutions.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
+        
           <br>
+
+          <!-- Section Experience -->
+
+          <section class="experience">
+            <header>
+              <h2 class="h2 article-title">Experiences</h2>
+            </header>
+
+              <div class="experience-timeline">
+                <div id="expandable-experience">
+                <div class="experience-item">
+                  <div class="experience-meta">
+                    <h4 class="h4 experience-item-title"> Web Development Tutor</h4>
+                    <div class="experience-company-date">
+                    <span class="experience-company"><em>Universidad de Antioquía</em></span>
+                    <span class="experience-date"><em>August 2023 - November 2023</em></span>
+                  </div>
+                </div>
+                  <p class="experience-text">
+                    Developed and taught courses on object-oriented programming in Java, including creating RESTful APIs with Spring Boot and frontend development using React. Led database management with MySQL and cloud integration, designed evaluation systems, and conducted detailed assessments to measure student performance.
+                  </p>
+                </div>
+
+                <div class="experience-item">
+                  <div class="experience-meta">
+                    <h4 class="h4 experience-item-title"> Web Development Tutor</h4>
+                    <div class="experience-company-date">
+                    <span class="experience-company"><em>EnganchaTIC - MinTIC</em></span>
+                    <span class="experience-date"><em>November 2023 - November 2023</em></span>
+                  </div>
+                </div>
+                  <p class="experience-text">
+                    Led workshops and classes for certification candidates as part of the EnganchaTIC event, designing key exam questions for web development. Provided practical training focused on backend with Spring Boot, frontend with React, and database management with MySQL, ensuring thorough preparation for certification exams
+                  </p>
+                </div>
+              </div>
+
+              <div id="more-experience" style="display: none;">
+                <div class="experience-item">
+                  <div class="experience-meta">
+                    <h4 class="h4 experience-item-title">Web Developer</h4>
+                    <div class="experience-company-date">
+                    <span class="experience-company"><em>Hotel Guacarí</em></span>
+                    <span class="experience-date"><em>May 2024 - Present</em></span>
+                  </div>
+                </div>
+                  <p class="experience-text">
+                    Designed and developed a comprehensive management system for Guacari Hotel using React, Express, and PostgreSQL, implementing real-time booking updates and automated reporting. Managed deployment processes and utilized Git for version control, significantly enhancing operational efficiency and streamlining hotel operations                  </p>
+                </div>
+              </div>
+              <!-- Add more experience items as needed -->
+            </div>
+
+            <center> 
+              <button class="more" id="toggle-experience-button" onclick="toggleExperience()">
+                &darr; &nbsp; &nbsp; Show more experience &nbsp; &nbsp; &darr;
+              </button> 
+            </center>
+
+          </section>
 
           <!-- Languages -->
 
           <!-- Programming Languages -->
 
-          <h3 class="h3 languages-title">Languages</h3>
+          <header>
+            <h2 class="h2 article-title">Languages</h2>
+          </header>
 
           <section class="languages content-card">
 
@@ -534,6 +526,10 @@
               <button data-filter-btn>Backend</button>
             </li>
 
+            <li class="filter-item">
+              <button data-filter-btn>Data-Science</button>
+            </li>
+
           </ul>
 
           <div class="filter-select-box">
@@ -564,6 +560,10 @@
 
               <li class="select-item">
                 <button data-select-item>Backend</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Data Science</button>
               </li>
 
             </ul>
@@ -681,9 +681,9 @@
               </div>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="frontend">
+            <li class="project-item active" data-filter-item data-category="data-science">
               <figure class="blog-banner-box">
-                <img src="./assets/images/projects/modelo.jpg" alt="Singapur Airlines" loading="lazy">
+                <img src="./assets/images/projects/modelo.jpg" alt="Pruebas Saber PRO" loading="lazy">
               </figure>
               <div class="blog-content">
                 <div class="blog-meta">

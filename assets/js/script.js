@@ -362,3 +362,17 @@ document.addEventListener("DOMContentLoaded", function () {
     item.appendChild(titleDiv); 
   });
 });
+
+function toggleExperience() {
+  var moreExperience = document.getElementById("more-experience");
+  var btnText = document.getElementById("toggle-experience-button");
+
+  if (moreExperience.style.display === "none") {
+    moreExperience.style.display = "block";
+    btnText.innerHTML = "&uarr; &nbsp; &nbsp; Hide experience &nbsp; &nbsp; &uarr;";
+  } else {
+    moreExperience.style.display = "none";
+    btnText.innerHTML = "&darr; &nbsp; &nbsp; Show more experience &nbsp; &nbsp; &darr;";
+  }
+}
+
