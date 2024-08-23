@@ -338,6 +338,22 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
+  margin-bottom: 10px;
+
+}
+
+@media (max-width: 768px) {
+
+  .cv-download {
+    position: static;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .btn-download {
+    display: inline-block;
+    width: auto;
+  }
 }
 
 .avatar-box {
