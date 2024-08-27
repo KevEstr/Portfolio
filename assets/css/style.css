@@ -1346,6 +1346,7 @@ main {
   align-items: center;
   gap: 7px;
   margin-bottom: 10px;
+  margin-left: -15px;
 }
 
 .blog-meta :is(.blog-category, time) {
