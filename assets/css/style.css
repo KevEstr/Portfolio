@@ -2548,3 +2548,13 @@ textarea.form-input::-webkit-resizer {
 .certificate-item .btn-download ion-icon {
   margin-right: 5px;
 }
+
+.about,
+.certificates,
+.experience,
+.languages.content-card,
+.technologies,
+.blog-posts {
+  margin-bottom: 80px;
+}
+
