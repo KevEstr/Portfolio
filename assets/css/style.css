@@ -2558,5 +2558,111 @@ textarea.form-input::-webkit-resizer {
   margin-bottom: 80px;
 }
 
+/* Add this to your existing CSS */
+
+.technical-skills {
+  margin-bottom: 30px;
+}
+
+.skills-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: var(--bg-gradient-onyx);
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--text-gradient-yellow);
+}
+
+.skill-icon {
+  font-size: 2em;
+  color: var(--orange-yellow-crayola);
+  text-align: center;
+}
+
+.skill-title {
+  color: var(--white-2);
+  font-size: var(--fs-4);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+
+.tag {
+  background: var(--eerie-black-1);
+  color: var(--orange-yellow-crayola);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: var(--fs-7);
+  transition: all 0.3s ease;
+}
+
+.tag:hover {
+  background: var(--orange-yellow-crayola);
+  color: var(--eerie-black-1);
+}
+
+.language-level {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: var(--light-gray);
+}
+
+.level-badge {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+}
+
+.level-badge.b2 {
+  background: var(--orange-yellow-crayola);
+  color: var(--eerie-black-1);
+}
+
+.level-badge.native {
+  background: var(--vegas-gold);
+  color: var(--eerie-black-1);
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
